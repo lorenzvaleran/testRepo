@@ -14,6 +14,7 @@ class TestBasicMath : public CppUnit::TestFixture
 	CPPUNIT_TEST_SUITE(TestBasicMath);
 	CPPUNIT_TEST(testAddition);
 	CPPUNIT_TEST(testAddition2);
+	CPPUNIT_TEST(testAddition3);
 	CPPUNIT_TEST_SUITE_END();
 
 	public:
@@ -23,6 +24,7 @@ class TestBasicMath : public CppUnit::TestFixture
 	protected:
 		void testAddition(void);
 		void testAddition2(void);
+		void testAddition3(void);
 
 	private:
 		Math *mTestObj;

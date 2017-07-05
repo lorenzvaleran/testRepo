@@ -8,6 +8,7 @@
 #include "../Inc/TestBasicMath.h"
 #include <cppunit/TestAssert.h>
 
+
 void TestBasicMath::setUp()
 {
 	mTestObj = new Math();
@@ -28,4 +29,10 @@ void TestBasicMath::testAddition2(void)
 {
 	const int sum = mTestObj->add(-10, 10);
 	CPPUNIT_ASSERT_EQUAL_MESSAGE("Add(-10, 10) != 0", 0, sum);
+}
+
+void TestBasicMath::testAddition3(void)
+{
+	const int sum = mTestObj->add(1000000000, 1000000000);
+	CPPUNIT_ASSERT_EQUAL_MESSAGE("Add(1000000000, 1000000000) != 2000000000", 2000000000, sum);
 }

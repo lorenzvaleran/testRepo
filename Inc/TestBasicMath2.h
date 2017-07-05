@@ -15,6 +15,7 @@ class TestBasicMath2 : public CppUnit::TestFixture
 {
 	CPPUNIT_TEST_SUITE(TestBasicMath2);
 	CPPUNIT_TEST(testSubstraction);
+	CPPUNIT_TEST(testSubstraction2);
 	CPPUNIT_TEST_SUITE_END();
 
 	public:
@@ -23,6 +24,7 @@ class TestBasicMath2 : public CppUnit::TestFixture
 
 	protected:
 		void testSubstraction(void);
+		void testSubstraction2(void);
 
 	private:
 		Math *mTestObj;
