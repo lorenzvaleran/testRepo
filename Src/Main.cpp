@@ -19,11 +19,13 @@
 #include <cppunit/XmlOutputter.h>
 #include <netinet/in.h>
 #include "../Inc/TestBasicMath.h"
+#include "../Inc/TestBasicMath2.h"
 #include <iostream>
 
 using namespace std;
 
 CPPUNIT_TEST_SUITE_REGISTRATION( TestBasicMath );
+CPPUNIT_TEST_SUITE_REGISTRATION( TestBasicMath2 );
 
 int main(int argc, char* argv[])
 {

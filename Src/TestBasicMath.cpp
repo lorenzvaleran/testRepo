@@ -24,8 +24,8 @@ void TestBasicMath::testAddition(void)
 	CPPUNIT_ASSERT_EQUAL_MESSAGE("Add(10, 100) != 110", 110, sum);
 }
 
-void TestBasicMath::testSubtraction(void)
+void TestBasicMath::testAddition2(void)
 {
-	const int sub = mTestObj->sub(10, 100);
-	CPPUNIT_ASSERT_EQUAL_MESSAGE("Sub(10, 100) != -90", -90, sub);
+	const int sum = mTestObj->add(-10, 10);
+	CPPUNIT_ASSERT_EQUAL_MESSAGE("Add(-10, 10) != 0", 0, sum);
 }
